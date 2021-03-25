@@ -12,7 +12,6 @@ if (isLocalFileSystem) {
 }
 
 if (typeof window !== 'undefined' && 'Worker' in window) {
-  pdfjs.GlobalWorkerOptions.workerSrc = 'pdf.worker.js';
   pdfjs.GlobalWorkerOptions.workerPort = new PdfjsWorker();
 }
 
